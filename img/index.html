@@ -8,15 +8,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css css/main.css --> <!-- all be concatenated and combined into main css file -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
-    <!-- endBuild -->
-
-
-
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -92,7 +87,7 @@
                 <div class="col=12 col-sm">
                     <!-- <button type="button" class="btn btn-warning" title="Or Call us at<br><strong>+852 12345678</strong>"
                         data-placement="button" data-html="true" href=#reserveform data-toggle="tooltip">Reserve Tables</button> -->
-                        <a role="button" class="btn btn-block  btn-sm  nav-link btn-warning"
+                        <a role="button" class="btn btn-block nav-link btn-warning"
                         data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
                         data-placement="bottom" href="#reserveform">Reserve Table</a>
                 </div>
@@ -170,14 +165,11 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-class">
-                        <div class="media-class">
-                            <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                            <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>        
-                
-                        </div>
-                    </div>
-                </div>        
+                    <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                    <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                </div>
             </div>
+        </div>
         </div>
 
 
@@ -186,13 +178,8 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-sm order-sm-last col-md">
-                <div class="media">
-                    <div class="media-body">
-                        <h2 mt-0>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                    </div>
-                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
-                </div>
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
 
@@ -201,14 +188,9 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-sm order-sm-first col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="uthappizza">
-                    <div class="media-class">
-                <h2 mt-0>Alberto Somayya</h2>
+                <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-                </div>
-                </div>        
             </div>
         </div>
     <div class="row row-content align-items-center" id="reserveform"> 
@@ -288,12 +270,39 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
+    <script> 
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $("#mycarousel").carousel( { interval: 2000 } );
+        //     $("#carousel-pause").click(function(){
+        //         $("#mycarousel").carousel('pause');
+        //     });
+        //     $("#carousel-play").click(function(){
+        //         $("#mycarousel").carousel('cycle');
+        //     });
+        // });
+        $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                    $("#mycarousel").carousel('pause');
+                    $("#carouselButton").children("span").removeClass('fa-pause');
+                    $("#carouselButton").children("span").addClass('fa-play');
+                }
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                    $("#mycarousel").carousel('cycle');
+                    $("#carouselButton").children("span").removeClass('fa-play');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
+                }
+            });
+    </script>
+
 </body>
 
 </html>
