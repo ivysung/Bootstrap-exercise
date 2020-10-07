@@ -61,3 +61,7 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+.modalBody {
+  background-color: #D1C4E9;
+}

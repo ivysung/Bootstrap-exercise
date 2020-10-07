@@ -16,3 +16,28 @@ $("#carouselButton").click(function(){
         $("#carouselButton").children("span").addClass('fa-pause');                    
     }
 });
+
+
+// $('#reserveModal').modal('toggle');
+
+//   $('#reserveModal').modal('show');
+
+// $('#reserveModal').modal('hide');
+
+
+// $('#reserveButton').click(function(){
+//     $('#reserveModal').modal('show');
+// });
+
+// $('#loginButton').click(function(){
+//     $('#loginModal').modal('show');
+// });
+
+
+// $('#reserveModal').on('hidden.bs.modal', function (e) {
+//     // do something...
+//     // $('#reserveModal').modal('toggle');
+    
+//     $('#reserveModal').modal('show');
+//     console.log(e);
+//   });

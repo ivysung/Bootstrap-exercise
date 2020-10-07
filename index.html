@@ -34,25 +34,25 @@
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address fa-lg"></span> Contact</a></li>
                     </ul>
-                    <!-- <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                    <span class="navbar-text">
+                        <a data-toggle="modal" #loginModal id="loginButton" #loginButton>
                         <span class="fa fa-sign-in"></span> Login</a>
-                    </span> -->
+                    </span>
                 </div>      
         </div>
     </nav>
 
-     <!-- <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content"> -->
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
-            <!-- <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Login </h4>
+            <div class="modal-content">
+                <div class="modal-header navbar-dark">
+                    <h4 class="modal-title text-white">Login </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
+                <div class="modal-body modalBody">
+                    <form >
+                        <div class="form-row ">
                             <div class="form-group col-sm-4">
                                     <label class="sr-only" for="exampleInputEmail3">Email address</label>
                                     <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-    </div>  -->
+    </div> 
 
     <header class="jumbotron">
         <div class="container">
@@ -92,9 +92,8 @@
                 <div class="col=12 col-sm">
                     <!-- <button type="button" class="btn btn-warning" title="Or Call us at<br><strong>+852 12345678</strong>"
                         data-placement="button" data-html="true" href=#reserveform data-toggle="tooltip">Reserve Tables</button> -->
-                        <a role="button" class="btn btn-block  btn-sm  nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveform">Reserve Table</a>
+                        <a role="button" class="btn btn-block  btn-sm  nav-link btn-warning" id=reserveButton #reserveButton>
+                        Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -113,7 +112,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="row row-content">
+        <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
@@ -151,18 +150,18 @@
                     </a>
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="navbar-text">
                         <span class="carousel-control-next-icon"></span>
-                    </a> -->
-                        <!-- <button class="btn btn-danger btn-sm" id="carousel-pause">
+                    </a> 
+                         <button class="btn btn-danger btn-sm" id="carousel-pause">
                             <span class="fa fa-pause"></span>
-                        </button> -->
-                        <!-- <button class="btn btn-danger btn-sm" id="carouselButton">
+                        </button> 
+                         <button class="btn btn-danger btn-sm" id="carouselButton">
                             <span id="carousel-button-icon" class="fa fa-pause"></span>
                         </button>
                 </div>
              </div>
-        </div> -->
+        </div>
         
-        <div class="row row-content align-items-center"> 
+         <!-- <div class="row row-content align-items-center"> 
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -178,7 +177,7 @@
                     </div>
                 </div>        
             </div>
-        </div>
+        </div> 
 
 
         <div class="row row-content align-items-center">
@@ -210,39 +209,79 @@
                 </div>
                 </div>        
             </div>
-        </div>
-    <div class="row row-content align-items-center" id="reserveform"> 
-        <div class="col=sm col-sm-8 mx-auto">
-            <div class="card mx-auto">
-                <h3 class="card-header bg-warning text-white">Reserves a Table</h3>
-                <div class="card-body">
-                    <dl class="row ">
-                        <dt class="col-2">Number</dt>
-                    <!-- <dt class="col-2">of Guests</dt> -->
-                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 1</label>
-                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 2</label>
-                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 3</label>
-                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 4</label>
-                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 5</label>
-                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 6</label>
-                        <dt class="col-3"></dt>
-                        <dt class="col-2">of Guests</dt>
-                        <dt class="col-10"></dt>
-                        <dt class="col-12"></dt>
-                        <br>
-                        <dt class="col-2">Date and Time</dt>
-                        <dd class="col-4"><input type="textbox" name="Date" placeholder="Date"> </dd>
-                        <dd class="col-4"><input type="textbox" name="Time" placeholder="Time"> </dd>
-                        <br>
-                        <h5></h5>
-                        <dt class="col-12"></dt>
-                        <dd class="col-2"></dd>
-                        <dd class="col-4"><button type="submit" class="btn btn-primary btn-sm ml-auto">Reserve</button></dd>
-                    </dl>
+        </div>  -->
+
+
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="form-row">
+                <div class="modal-content">
+                    <div class="modal-header navbar-dark">
+                        <h3 class="modal-title text-white">Reserve Table </h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <div class="modal-body modalBody">
+                        <form>
+                        <!-- <div class="row  align-items-center" id="reserveform"> 
+                            <div class="col=sm col-sm-12 mx-auto"> -->
+                                <div class="form-row">
+                                        <dt class="col-2"> Number</dt>
+                                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 1</label>
+                                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 2</label>
+                                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 3</label>
+                                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 4</label>
+                                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 5</label>
+                                        <label class="radio-inline col-1"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > 6</label>
+                                        <dt class="col-3"></dt>
+                                        <dt class="col-2"> of Guests</dt>
+                                        <dt class="col-10"></dt>
+                                        <dt class="col-12"></dt>
+                                        <br>
+                                    </div>
+                                    <div class="form-row">
+                                        <dt class="col-2"> Section</dt>
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-secondary active bg-success">
+                                              <input type="radio" name="options" id="option1" class="bt-sm bg-success" autocomplete="off" checked> Non-Smoking
+                                            </label>
+                                            <label class="btn btn-secondary bg-danger">
+                                              <input type="radio" name="options" id="option2" class="bt-sm bg-danger" autocomplete="off"> Smoking
+                                            </label>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <br>
+                                    <br>
+                                 
+                                    <div class="form-row">
+                                        <dt class="col-2"> Date and    </dt>
+                                        <dd class="col-3"><input type="textbox" name="Date" placeholder="Date"> </dd>
+                                        <dd class="col-5"><input type="textbox" name="Time" placeholder="Time"> </dd>
+                                        <dt class="col-3"> Time</dt>
+                                        <br>
+                                    </div>
+                                        <dt class="col-12"></dt>
+                                        <dd class="col-2"></dd>
+                                    <div class="form-row">
+                                    <dd class="col-2"></dd>
+                                    <div class="btn-group mr-2">
+                                        <button type="cancel" class="btn btn-secondary ">Cancel</button>
+                                    </div>
+                                    <div class="btn-group mr-2">
+                                        <button type="submit" class="btn btn-primary ">Reserve </button>
+                                    </div>
+                                    </div>
+                            </form>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div> 
 
     
 
@@ -293,6 +332,15 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        $('#reserveButton').click(function(){
+        $('#reserveModal').modal('show');
+        });
+
+        $('#loginButton').click(function(){
+            $('#loginModal').modal('show');
+        });
+    </script>
     <!-- endbuild -->
 </body>
 
